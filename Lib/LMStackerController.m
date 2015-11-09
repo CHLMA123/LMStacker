@@ -7,7 +7,7 @@
 
 #import "LMStackerController.h"
 #import "LMStackerWebViewController.h"
-#import "HexColors.h
+#import "HexColors.h"
 
 @interface LMStackerController ()
 
