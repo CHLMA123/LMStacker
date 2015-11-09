@@ -9,7 +9,7 @@
 #import "LMStackerURLParser.h"
 #import "LMStackerCustomAction.h"
 #import <UIDevice-Hardware/UIDevice-Hardware.h>
-#import "HexColors.h
+#import "HexColors.h"
 
 @interface LMStackerWebViewController ()
 @property WebViewJavascriptBridge* bridge;
