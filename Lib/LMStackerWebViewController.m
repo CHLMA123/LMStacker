@@ -8,7 +8,7 @@
 #import "LMStackerWebViewController.h"
 #import "LMStackerURLParser.h"
 #import "LMStackerCustomAction.h"
-#import <UIDevice-Hardware/UIDevice-Hardware.h>
+#import "UIDevice-Hardware.h"
 #import "HexColors.h"
 
 @interface LMStackerWebViewController ()
