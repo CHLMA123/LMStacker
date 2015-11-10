@@ -91,6 +91,7 @@ andRootPageTabImageName:(NSString *)pageTabName
     refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
     if ([self.delegate refreshSpinnerColor] != NULL) {
+        refreshControl.layer.zPosition -= 1;
         refreshControl.tintColor = [UIColor hx_colorWithHexString:[self.delegate refreshSpinnerColor]];
     }
     [self.myWebView.scrollView addSubview:refreshControl];
