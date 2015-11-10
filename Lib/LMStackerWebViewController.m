@@ -290,6 +290,7 @@ andRootPageTabImageName:(NSString *)pageTabName
     [self.myWebView setBackgroundColor:[UIColor clearColor]];
     [self.myWebView setOpaque:NO];
     self.myWebView.scrollView.bounces = YES;
+    self.myWebView.suppressesIncrementalRendering = YES;
     self.myWebView.alpha = 0.0f;
     [self.view addSubview:self.myWebView];
 
