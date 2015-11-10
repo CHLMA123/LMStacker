@@ -27,7 +27,7 @@ pod 'LMStacker', :git => 'https://github.com/charlon/LMStacker.git'
 ```
 And then run
 ```
-$ pod install
+$ pod install --no-clean
 ```
 
 Now in your XCode project:
