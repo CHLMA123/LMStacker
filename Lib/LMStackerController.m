@@ -97,8 +97,8 @@
 
     // Put the main controller in some kind of naviation with a heading
     browserNavController = [[LMStackerBrowserController alloc] initWithRootViewController:myRootController];
-    browserNavController.navigationBar.barTintColor = [UIColor colorWithHexString:@"EBEBEB"];
-    browserNavController.navigationBar.tintColor = [UIColor colorWithHexString:@"666666"];
+    browserNavController.navigationBar.barTintColor = [UIColor hx_colorWithHexString:@"EBEBEB"];
+    browserNavController.navigationBar.tintColor = [UIColor hx_colorWithHexString:@"666666"];
     browserNavController.navigationBar.translucent = YES;
 
     // Show it
