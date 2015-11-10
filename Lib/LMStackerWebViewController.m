@@ -70,9 +70,9 @@ andRootPageTabImageName:(NSString *)pageTabName
     [self.navigationItem setBackBarButtonItem:backButton];
 
     if ([self.delegate stackerBackgroundColor] != NULL) {
-        [self.view setBackgroundColor:[UIColor colorWithHexString:[self.delegate stackerBackgroundColor]]];
+        [self.view setBackgroundColor:[UIColor hx_colorWithHexString:[self.delegate stackerBackgroundColor]]];
     } else {
-        [self.view setBackgroundColor:[UIColor colorWithHexString:@"FFFFFF"]];
+        [self.view setBackgroundColor:[UIColor hx_colorWithHexString:@"FFFFFF"]];
     }
 
     // Setup Navigation Items
@@ -91,7 +91,7 @@ andRootPageTabImageName:(NSString *)pageTabName
     refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
     if ([self.delegate refreshSpinnerColor] != NULL) {
-        refreshControl.tintColor = [UIColor colorWithHexString:[self.delegate refreshSpinnerColor]];
+        refreshControl.tintColor = [UIColor hx_colorWithHexString:[self.delegate refreshSpinnerColor]];
     }
     [self.myWebView.scrollView addSubview:refreshControl];
 }
@@ -297,7 +297,7 @@ andRootPageTabImageName:(NSString *)pageTabName
     activityIndicator.center = self.view.center;
     [activityIndicator startAnimating];
     if([self.delegate loadingSpinnerColor] != NULL){
-        [activityIndicator setColor:[UIColor colorWithHexString:[self.delegate loadingSpinnerColor]]];
+        [activityIndicator setColor:[UIColor hx_colorWithHexString:[self.delegate loadingSpinnerColor]]];
     } else {
         [activityIndicator setColor:[UIColor blackColor]];
     }
