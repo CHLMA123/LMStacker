@@ -25,7 +25,7 @@ Built for: iPhones running iOS 7 & iOS 8 (iPad support coming soon)
 
 In your Podfile add:
 ```
-pod 'LMStacker', :git => 'https://github.com/lokimeyburg/Stacker.git'
+pod 'LMStacker', :git => 'https://github.com/charlon/LMStacker.git'
 ```
 And then run
 ```
