@@ -297,6 +297,8 @@ andRootPageTabImageName:(NSString *)pageTabName
     // Lets show a loading indicator
     activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.center = self.view.center;
+    activityIndicator.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
+    
     [activityIndicator startAnimating];
     if([self.delegate loadingSpinnerColor] != NULL){
         [activityIndicator setColor:[UIColor hx_colorWithHexString:[self.delegate loadingSpinnerColor]]];
