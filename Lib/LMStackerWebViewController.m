@@ -237,6 +237,7 @@ andRootPageTabImageName:(NSString *)pageTabName
         self.title = @" ";
     } else {
         newPageTitle = [newPageTitle stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+        newPageTitle = [newPageTitle stringByReplacingOccurrencesOfString:@"%26" withString:@"&"];
         self.title = newPageTitle;
     }
 
